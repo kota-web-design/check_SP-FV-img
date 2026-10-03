@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kota-web-design.github.io/check-2/sitemap.xml
+Sitemap: https://kota-web-design.github.io/check_SP-FV-img/sitemap.xml
