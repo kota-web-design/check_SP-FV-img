@@ -2143,35 +2143,17 @@ textarea:focus-visible {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 360px) {
   .hero {
-    /* Keep the landmarks above browser chrome, cropping only sky and foreground sea. */
-    aspect-ratio: auto;
-    height: min(100vh, 224.84vw);
-    height: min(100svh, 224.84vw);
-    min-height: calc(350px + 90vw);
-    background-position: center calc(100% + 25.22vw);
+    aspect-ratio: 793 / 1983;
   }
 
   .hero .hero__inner {
-    padding-block: calc(var(--header-height) + 62px) 0;
+    padding-top: calc(var(--header-height) + 76px);
   }
 
   .hero__title {
-    font-size: 1.75rem;
-    line-height: 1.4;
-  }
-
-  .hero__lead {
-    margin-top: 14px;
-    font-size: 0.875rem;
-    line-height: 1.8;
-  }
-}
-
-@media (max-width: 360px) {
-  .hero__title {
-    font-size: 1.5rem;
+    font-size: 1.85rem;
   }
 }
 
@@ -2179,6 +2161,10 @@ textarea:focus-visible {
   .brand__logo {
     width: 230px;
     max-width: calc(100vw - 100px);
+  }
+
+  .hero__inner {
+    padding-top: calc(var(--header-height) + 96px);
   }
 
   .property-contact__text span,
