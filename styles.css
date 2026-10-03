@@ -1629,12 +1629,12 @@ textarea:focus-visible {
   }
 
   .hero {
-    min-height: 100vh;
-    min-height: 100lvh;
-    background-image: url("./assets/FV_sp_seaside.jpg");
-    background-position: center top;
+    min-height: 0;
+    aspect-ratio: 793 / 1863;
+    background-image: url("./assets/FV_sp_tall.jpg");
+    background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
   }
 
   .hero__overlay {
@@ -2143,17 +2143,17 @@ textarea:focus-visible {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 360px) {
   .hero {
-    min-height: 880px;
-    background-size: cover;
+    aspect-ratio: 793 / 1983;
   }
-}
 
-@media (max-width: 520px) and (min-height: 880px) {
-  .hero {
-    min-height: 100vh;
-    min-height: 100svh;
+  .hero .hero__inner {
+    padding-top: calc(var(--header-height) + 76px);
+  }
+
+  .hero__title {
+    font-size: 1.85rem;
   }
 }
 
